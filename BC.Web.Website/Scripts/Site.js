@@ -9,7 +9,7 @@ function changeText(jumbotron, header, text, button, ms) {
     $(h1).fadeOut(ms, function () {
         $(this).text(header).fadeIn(ms);
     });
-    $(p).fadeOut(ms, function () {
+    $(p).fadeOut(ms, function () { 
         $(this).text(text).fadeIn(ms);
     });
     $(a).fadeOut(ms, function () {
