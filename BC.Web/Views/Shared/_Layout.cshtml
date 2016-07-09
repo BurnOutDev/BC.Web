@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Business Credit</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <ul class="share-inverted">
+        <li><a href="#" class="glyphicon glyphicon-phone"></a></li>
+        <li><a href="#" class="glyphicon glyphicon-calendar"></a></li>
+        <li><a href="#" class="glyphicon glyphicon-lock"></a></li>
+        <li><a href="#" class="glyphicon glyphicon-question-sign"></a></li>
+        <li><a href="#" class="last-item-padding"></a></li>
+    </ul>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+
+        <div id="login-collapse" class="collapse row">
+            <div class="col-xs-12 col-sm-6 col-md-3 top-bar-profile">
+                <h3>Enter your credentials:</h3>
+                <div class="checkbox popupCheckbox">
+                    <label class="control-label"></label>
+                </div>
+                <div id="slide-down">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <button type="submit" class="btn btn-default">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="navbar-header">
+                <!-- #region Mobile Navbar -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- #endregion -->
+
+                <a class="navbar-brand" href="/"></a>
+
+            </div>
+
+            <!-- #region NonMobile Navbar -->
+            <div class="navbar-collapse collapse">
+                @Html.Partial("_LoginPartial")
+                <ul class="nav navbar-nav navbar navbar-right">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+            <!-- #endregion -->
+        </div>
+    </div>
+
+    <div class="row wrapper" style="position: relative; z-index:-10" id="container">
+        <div id="home_banner" class="owl-carousel owl-loaded owl-drag">
+
+
+            <div class="owl-item active" style="width: 1583px;">
+                <div class="item" data-img="http://ppcorn.com/us/wp-content/uploads/sites/14/2016/02/Sasha-Grey-ppcorn.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 banner_content">
+                                <h2>სწრაფი უგირავნო სესხი ყოველდღიური დაფარვით</h2>
+                                <p>"ამ სესხის წყალობით მოვახერხე თვითრეალიზაცია მსოფლიო მასშტაბის ვიდეოინდუსტრიაში" </p>
+                                <a href="/int/individual-investor/about-us/group-structure" class="btn">Access more<i class="glyphicon glyphicon-chevron-right"></i></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-8"></div>
+                        </div>
+                    </div>
+                    <div class="banner_bg" style="position: relative; z-index: 0; background: none;">
+                        <img class="banner_initializer">
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="owl-item" style="width: 1583px;">
+                <div class="item" data-img="https://upload.wikimedia.org/wikipedia/commons/b/b8/Street_Child,_Srimangal_Railway_Station.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 banner_content">
+                                <h2>ფული მარტივად ვიშოვეთ</h2>
+                                <p>
+                                    მანქანა, სახლი, აგარაკი...
+                                    ბოლოს დედიკომ ბიზნესკრედიტში აიღო სესხი...
+                                    დიდი ხანია არ მინახავს...
+                                </p>
+                                <a href="/int/individual-investor/about-us/our-capabilities/multi-asset-capabilities" class="btn">Access more<i class="glyphicon-chevron-right"></i></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-8"></div>
+                        </div>
+                    </div>
+                    <div class="banner_bg" style="position: relative; z-index: 0; background: none;">
+                        <img class="banner_initializer">
+                        <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 700px; width: 1583px; z-index: -999998; position: absolute;">
+                            <video class="fillWidth fadeIn animated" preload="auto" autoplay="" loop="" src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Moving-Forward.mp4" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1583px; height: 890.438px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -95.2188px;"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-item" style="width: 1583px;">
+                <div class="item" data-img="http://www.ashburtoninvestments.com/images/default-source/home-page/climber.jpg?Status=Master&amp;sfvrsn=6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 banner_content">
+                                <h2>Access more</h2>
+                                <p>Our investment expertise and on the ground presence in developed and emerging markets provides you with access to more sources of return and more ways to mitigate risk.</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-8"></div>
+                        </div>
+                    </div>
+                    <div class="banner_bg" style="position: relative; z-index: 0; background: none;">
+                        <img class="banner_initializer">
+                        <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 700px; width: 1583px; z-index: -999998; position: absolute;">
+                            <video class="fillWidth fadeIn animated" preload="auto" autoplay="" loop="" src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Relaxation.mp4" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1583px; height: 890.438px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -95.2188px;"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-item" style="width: 1583px;">
+                <div class="item" data-img="http://www.ashburtoninvestments.com/images/default-source/home-page/200133989-001-deserttree.jpg?Status=Master&amp;sfvrsn=12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 banner_content">
+                                <h2>Innovative thinking</h2>
+                                <p>We look beyond traditional investments to offer you a blend of products and solutions that suit your individual needs. </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-8"></div>
+                        </div>
+                    </div>
+                    <div class="banner_bg" style="position: relative; z-index: 0; background: none;">
+                        <img class="banner_initializer">
+                        <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 700px; width: 1583px; z-index: -999998; position: absolute;">
+                            <video class="fillWidth fadeIn animated" preload="auto" autoplay="" loop="" src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Man-and-Sea.mp4" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1583px; height: 890.438px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -95.2188px;"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div style="position:absolute">
+            @RenderBody()
+        </div>
+
+        <footer style="z-index: 50000">
+            <p>&copy; @DateTime.Now.Year - Business Credit Corp.</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/Content/owl-carousel")
+    @Scripts.Render("~/bundles/owl-carousel")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            // Landing page banner
+            $('#home_banner').owlCarousel({
+                margin: 0,
+                items: 1,
+                nav: true,
+                navText: ['<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>', '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>'],
+                navContainerClass: 'container owl-nav'
+            });
+
+            // Landing page banner back strech
+            $('#home_banner .item').each(function () {
+                return;
+                var img = $(this).data('img');
+                //      $(this).backstretch(img + '&size=' + $(window).width() + '');
+                $(this).find('.banner_bg').backstretch(img);
+            });
+
+            //  Quick Link insight banner
+            $('#insights_carousel').owlCarousel({
+                margin: 0,
+                items: 1,
+                navText: ['<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>', '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>'],
+                nav: true,
+            });
+
+
+            //Container Dropdown padding from body
+
+
+
+            $('.top-bar-profile').css('padding-left', $('.container').css('padding-left'));
+            $('.top-bar-profile').css('margin-left', $('.container').css('margin-left'));
+
+            for (var i = 0; i < $('.owl-item').length; i++) {
+                $($('.owl-item')[i]).css("width", screen.width);
+            }
+
+            $('video').each(function (i, e) {
+                e.play();
+            })
+        });
+    </script>
+</body>
+</html>

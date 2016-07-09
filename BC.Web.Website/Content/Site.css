@@ -1,0 +1,190 @@
+﻿@font-face {
+    font-family: mtvr;
+    src: url(../fonts/bpg-nino-mtavruli-webfont.ttf);
+}
+
+body {
+    background-position: bottom;
+    background-image: url(../svg/bg/bg.svg);
+    padding-top: 80px;
+    padding-bottom: 20px;
+    /*background-color: #0c87bb;*/
+    background-color: #165481;
+    background-repeat: repeat-x;
+    background-size: 1200px;
+    max-width: none;
+    overflow: hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.bg {
+    /*background-image: url(../svg/slide/slide1.svg);*/
+    background-image: linear-gradient(-60deg, transparent 600px, rgba(255,255,255, 0.1) 500px) /*, url(../svg/slide/slide1.svg)*/;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: linear-gradient(-60deg, transparent 28px, #b30838 29px);*/
+    color: white !important;
+    /*background: rgba(12, 135, 187, 0.3);*/
+    /*background: none;*/
+    background: none;
+    min-height: 250px;
+}
+
+    .bg h1 {
+        /*color: #fc4d05;*/
+        color: white;
+        font-size: 40px;
+        font-family: mtvr;
+        font-weight: 300;
+    }
+
+.btn {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: #165481;
+    color: white;
+}
+
+.row-transparent {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-left > img {
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+    /*#ianim {
+    background-image: url(/svg/logos/logo.svg);
+    background-size: cover;
+    width: 20px;
+    height: 380px;
+    -moz-transition: width 0.2s ease-out;
+    -o-transition: width 0.2s ease-out;
+    -webkit-transition: width 0.2s ease-out;
+    transition: width 0.2s ease-out;
+}
+#ianim:hover {
+     width: 360px;
+}*/
+
+    .navbar-default .navbar-nav > li > a {
+        font-family: mtvr;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+.navbar-nav {
+    margin-top: 35px;
+}
+
+.jumbotron p {
+    font-family: mtvr;
+    font-weight: 200;
+    color: #FC4D06;
+}
+
+.jumbotron img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    opacity: 0.75;
+    height: 250px;
+    margin-top: 20px;
+}
+
+    .jumbotron img:hover {
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+
+
+.container {
+    width: 100%;
+}
+
+#main-content {
+    min-height: 100%;
+    height: auto;
+}
+
+    #main-content > .row {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+        #main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+            float: none;
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+        }
+
+.main-row {
+}
+
+@-webkit-keyframes MOVE-BG {
+    from {
+        background-position: 0 100%;
+    }
+
+    to {
+        background-position: 50% 100%;
+    }
+}
+
+@-webkit-keyframes COLOR-BG {
+    from {
+        background-color: #165481;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+.bg-moving {
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+}
+
+.bg-color {
+    -webkit-animation-name: COLOR-BG;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+
+    background-color: white;
+}
